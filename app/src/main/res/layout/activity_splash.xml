@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:alwaysDrawnWithCache="false"
+    android:animateLayoutChanges="false"
+    android:animationCache="false"
+    android:background="@color/colortron">
+    <TextView
+        android:id="@+id/splashtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/aligtaifont"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="8sp"
+        android:text="Kaya"
+        android:textAllCaps="true"
+        android:textColor="@color/coolblue"
+        android:textSize="72sp"
+        />
+    <Button
+        android:id="@+id/btnSplash"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Ready to Scan"
+        android:fontFamily="casual"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/shape"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        />
+
+</RelativeLayout>

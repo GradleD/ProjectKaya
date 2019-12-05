@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Enter Your Data"
+    android:layout_marginLeft="120dp"
+    android:textSize="25sp"
+    android:fontFamily="@font/aligtai"
+    android:textColor="@color/EveningSunshne"
+    />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextLabel"
+        android:layout_margin="10dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/NameEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/AgeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextLabel"
+        android:layout_margin="5dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/AgeEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/HeightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextLabel"
+        android:layout_margin="5dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/HeightEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Height(In ft.)"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/weightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextLabel"
+        android:layout_margin="5dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/WeightEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight(in Kg)"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/waistInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextLabel"
+        android:layout_margin="5dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/WaistEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Waist"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnMeasure"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Get your Measures"
+        android:fontFamily="casual"
+        android:background="@drawable/shape"
+        android:textStyle="bold"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/EveningSunshne"
+        />
+</LinearLayout>

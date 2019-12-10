@@ -19,15 +19,16 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
         RunAnimation();
         t1 =findViewById(R.id.splashtext);
         btnSplash = findViewById(R.id.btnSplash);
         btnSplash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(SplashActivity.this, MainActivity.class);
+                Intent i = new Intent(SplashActivity.this, WelcomeScreen.class);
                 startActivity(i);
-                //finish();
+                finish();
             }
         });
 

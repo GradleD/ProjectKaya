@@ -4,60 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Enter Your Data"
-    android:layout_marginLeft="120dp"
-    android:textSize="25sp"
-    android:fontFamily="@font/aligtai"
-    android:textColor="@color/EveningSunshne"
-    />
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/NameInput"
+    <TextView
+        android:id="@+id/Headingtv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:fontFamily="@font/comfortaab"
+        android:text="Enter Your Data"
+        android:textColor="@color/EveningSunshne"
+        android:textSize="25sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NameInput"
         style="@style/TextLabel"
-        android:layout_margin="10dp"
-        >
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/NameEdittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"/>
+            android:hint="Name"
+            android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/AgeInput"
+        style="@style/TextLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/TextLabel"
-        android:layout_margin="5dp"
-        >
+        android:layout_margin="5dp">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/AgeEdittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Age"/>
+            android:hint="Age"
+            android:inputType="numberSigned|numberDecimal"
+            android:maxLines="1" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
 
+
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/HeightInput"
+        android:id="@+id/heightInput"
+        style="@style/TextLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/TextLabel"
-        android:layout_margin="5dp"
-        >
+        android:layout_margin="5dp">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/HeightEdittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Height(In ft.)"/>
+            android:hint="Height(eg.5.10)"
+            android:inputType="numberSigned|numberDecimal"
+            android:maxLines="1" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -65,44 +72,92 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/weightInput"
+        style="@style/TextLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/TextLabel"
-        android:layout_margin="5dp"
-        >
+        android:layout_margin="5dp">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/WeightEdittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Weight(in Kg)"/>
+            android:hint="Weight(in Kg)"
+            android:inputType="numberDecimal"
+            android:maxLines="1" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/waistInput"
+        style="@style/TextLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/TextLabel"
-        android:layout_margin="5dp"
-        >
+        android:layout_margin="5dp">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/WaistEdittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Waist"/>
+            android:hint="Waist"
+            android:inputType="numberDecimal"
+            android:maxLines="1" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/gendertv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="Select Your Gender"
+        android:textColor="@color/EveningSunshne" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Male"
+            android:textColor="@color/EveningSunshne" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Female"
+            android:textColor="@color/EveningSunshne" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Other"
+            android:textColor="@color/EveningSunshne" />
+
+    </RadioGroup>
+
+
     <Button
         android:id="@+id/btnMeasure"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:text="Get your Measures"
-        android:fontFamily="casual"
-        android:background="@drawable/shape"
-        android:textStyle="bold"
         android:layout_marginLeft="85dp"
         android:layout_marginTop="25dp"
-        android:textColor="@color/EveningSunshne"
-        />
+        android:background="@drawable/shape"
+        android:fontFamily="casual"
+        android:text="Get your Measures"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
 </LinearLayout>

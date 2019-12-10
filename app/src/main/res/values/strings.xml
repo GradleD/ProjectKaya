@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ProjectKaya</string>
+
+    <string name="splashtext">Ready to Measure</string>
+    <string name="wcText">Every Measurement in Inches with Proper Fit Ratio</string>
+
+
 </resources>

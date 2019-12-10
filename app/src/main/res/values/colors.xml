@@ -9,4 +9,5 @@
     <color name="coolblue">#2193b0</color>
     <color name="black">#000000</color>
     <color name="white">#ffff</color>
+    <color name="bgBottomNavigation">#fe485a</color>
 </resources>
